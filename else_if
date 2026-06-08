@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+   int n,Physics,Chemistry,Maths,total;
+    char a;
+    float f;
+    
+    printf("Physics:\n");
+    printf("Chemistry:\n");
+    printf("Maths:\n");
+    
+    scanf("%d%d%d",&Physics,&Chemistry,&Maths);
+    printf("Physics + Chemistry + Maths = %d\n", Physics + Chemistry + Maths);
+    total= Physics + Chemistry + Maths;
+    
+
+    if (total>=200) 
+        printf("Grade A");
+    else if (total >= 150)
+        printf("Grade B");
+    else if (total < 150)
+        printf("Grade C");
+    else
+        printf("Not a valid Marks");
+        
+    return 0;   
+}
+
+
